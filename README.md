@@ -1,8 +1,8 @@
 #### <a id="post_wallets_virtual"></a> Submit a virtual account ####
 
 ```
-Method: POST 
-URL: /wallets/iban/
+Method: PUT 
+URL: /wallets/{id}/iban/
 ```
 
 The Virtual account management solution revolve around a self-service web-based delivery mechanism that offers customers real-time information access and account management within a virtual banking domain.
