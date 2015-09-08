@@ -29,15 +29,7 @@ Payments to and from the virtual account will be booked on the customer's physic
 ```js
 POST /wallets/
 {
-	"wallet": {
-    "id": "ND2da3"
-    "status": "authorized",
-    "tag": "My wallet account EUR",
-    "accountNumber": "654165816813556358",
-    "currency": "EUR",
-    "correspondantBank":{correspondentBank}
-    "holderBank":{beneficiaryBank}
-	"holder":{beneficiary}
+    "walletId": "ND2da3"
 }
 ```
 
@@ -75,14 +67,8 @@ Payments to and from the physical account will only be booked in this specific p
 ```js
 POST /wallets/
 {
-	"wallet": {
-    "id": "ND2da3"
-    "status": "authorized",
     "tag": "My wallet account EUR",
-    "accountNumber": "654165816813556358",
     "currency": "EUR",
-    "correspondantBank":{correspondentBank}
-    "holderBank":{beneficiaryBank}
-	"holder":{beneficiary}
+    "holder":{beneficiary}
 }
 ```
